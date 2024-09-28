@@ -1,111 +1,84 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container {
-    background-color: rgb(245, 241, 241);
-    padding: 20px;
+header {
+    background: #38424d;
+    color: hsl(0, 56%, 82%);
+    text-align: center;
+    padding: 2rem 0;
+    border: 1px solid black;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid burlywood;
 }
 
-h1, h2, h3 {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e4bebe;
+    text-decoration: none;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e2d5d5;
+    color: #0073e6;
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem 0;
     text-align: center;
 }
 
-.menu {
-    /* background-color: red; */
+.skills-container, .projects-container, .services-container {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.menu-item {
-    background-color: #eaeaea;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.menu-item h3, .menu-item p {
-    margin: 5px 0;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:active {
-    background-color: #0056b3;
-}
-
-#order-list {
-    background-color: #f1e8e8;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.payment-methods {
-    display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 2rem;
 }
 
-.payment-methods button {
-    background-color: #28a745;
-    color: white;
+.skill-item, .project-item, .service-item {
+    flex: 1;
+    border: 1px solid #857474;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
-.payment-methods button:active {
-    background-color: #218838;
-}
-
-.img{
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-
-.Theme{
-    display: flex;
-    justify-content: end;
-    margin-bottom: 10px;
-}
-
-/* Light Theme */
-.light-theme {
-    background-color: #f0f0f0;
-    color: #000;
-}
-
-/* Dark Theme */
-.dark-theme {
-    background-color: #333;
+footer {
+    background: #333;
     color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-.dark-theme .menu-item {
-    background-color: #5c5555;
-    border-color: #333131;
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-button#theme-toggle {
-    float: right;
-    margin-right: 20px;
-    padding: 10px;
-    background-color: #007bff;
-}
-
-button#theme-toggle:hover {
-    background-color: #0056b3;
+.social-links a {
+    color: #fff;
+    text-decoration: none;
 }

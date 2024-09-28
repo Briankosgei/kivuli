@@ -3,79 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Menu</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <title>K. Brian Kipkosgei - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-
-    <div class="container">
-        <h1>Welcome to Hotel Kivuli</h1>
-        <button id="theme-toggle">Theme</button>
-         
-        <!-- Menu Section -->
-        <h2>Menu</h2>
-        <div class="menu">
-            <div class="menu-item">
-                <h3>Fried Chicken</h3>
-                <img src="images/chicken.jpg" alt="" srcset="" class="img">
-                <p>Description: Crispy chicken served with fries.</p>
-                <p>Price: KSh 500</p>
-                <button onclick="addToOrder('Fried Chicken', 500)">Order</button>
-            </div>
-            <div class="menu-item">
-                <h3>Beef Burger</h3>
-                <img src="images/burger.jpg" alt="" srcset="" class="img">
-                <p>Description: Juicy beef burger with cheese and salad.</p>
-                <p>Price: KSh 700</p>
-                <button onclick="addToOrder('Beef Burger', 700)">Order</button>
-            </div>
-            <div class="menu-item">
-                <h3>Veggie Pizza</h3>
-                <img src="images/vegg pizza.jpg" alt="" srcset="" class="img">
-                <p>Description: A delicious veggie pizza with fresh toppings.</p>
-                <p>Price: KSh 600</p>
-                <button onclick="addToOrder('Veggie Pizza', 600)">Order</button>
-            </div>
-            <div class="menu-item">
-                <h3>Fruit salad</h3>
-                <img src="images/Fruit salad.jpg" alt="" srcset="" class="img">
-                <p>Description: A fruit salad with fresh toppings.</p>
-                <p>Price: KSh 350</p>
-                <button onclick="addToOrder('Fruit salad', 350)">Order</button>
-            </div>
-            <div class="menu-item">
-                <h3>Vegetable Pasta</h3>
-                <img src="images/veg pasta.jpg" alt="" srcset="" class="img">
-                <p>Description: A vegetable pasta with fresh toppings.</p>
-                <p>Price: KSh 750</p>
-                <button onclick="addToOrder('Vegatable Pasta', 750)">Order</button>
-            </div>
-            <div class="menu-item">
-                <h3>Smoothie</h3>
-                <img src="images/smoothie.jpg" alt="" srcset="" class="img">
-                <p>Description: A fresh smoothie with an apple toppings.</p>
-                <p>Price: KSh 200</p>
-                <button onclick="addToOrder('Smoothie', 200)">Order</button>
-            </div>
+    <!-- Header Section -->
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>Hi, I'm Brian Kipkosgei</h1>
+            <p>Software Developer & ICT Technician.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
         </div>
-       
+    </header>
 
-        <!-- Order Section -->
-        <h2>Check Your Order Here!!</h2>
-        <div id="order-list"></div>
-        <h3>Total: KSh <span id="total-price">0</span></h3>
-
-        <!-- Payment Methods -->
-        <h2>Payment Methods</h2>
-        <div class="payment-methods">
-            <button onclick="payWithMpesa()">Pay with M-Pesa</button>
-            <button onclick="payWithPaypal()">Pay with PayPal</button>
-            <button onclick="payWithStripe()">Pay with Stripe</button>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, C, etc.</p>
+            </div>
+            <div class="skill-item">
+                <h3>ICT Assistance</h3>
+                <p>Technical support, network setup, troubleshooting, Software installatiom, Ms Office, etc.</p>
+            </div>
+            <!-- Add more skills as needed -->
         </div>
+    </section>
 
-    </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <h3>My first project</h3>
+                <p>Hotel Kivuli is a project desighned to solve a certain problem in he food industry and ease food delivery.</p>
+                <a href="https://briankosgei.github.io/kivuli/" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project Name 2</h3>
+                <p>Short description of the project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
 
-    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Creating responsive and interactive websites as well as POS Systems installation.</p>
+            </div>
+            <div class="service-item">
+                <h3>ICT Assistance</h3>
+                <p>Providing total ICT support and solutions.</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xldrqeaa" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Brian Kipkosgei. </p>
+        <ul class="social-links">
+            <li><a href="https://github.com/Briankosgei" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/brian-kipkosgei-3202a6273/" target="_blank">LinkedIn</a></li>
+            <!-- Add more social links as needed -->
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
